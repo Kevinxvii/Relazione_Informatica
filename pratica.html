@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:500&display=swap" rel="stylesheet">
+
+    <title>Relazione Kevin Kulejmani</title>
+</head>
+<body>
+    <header>
+        <a class="logo" href="Index.html">Relazione</a>
+        <nav>
+            <ul class="nav__links">
+                <li class="dropdown">
+                    <button>Teoria</button>
+                    <ul class="dropdown-content">
+                        <li><a href="dbms.html">DBMS</a></li>
+                        <li><a href="Modellizzazione.html">Modelizzazione</a></li>
+                        <li><a href="Associazioni.html">Associazioni</a></li>
+                        <li><a href="Chiavi.html">Tipi di Chiavi</a></li>
+                        <li><a href="EasyPHP.html">EasyPHP</a></li>
+                        <li><a href="WAMP.html">WAMP</a></li>
+                    </ul>
+                </li>
+                <li><a href="pratica.html">Pratica</a></li>
+                <li><a href="Record.html">Record</a></li>
+                <li><a href="ModalitàWampp.html">Modalità di Esportazione e Importazione del file</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="testo">
+        <h2>Installazione Xampp</h2>
+        <p>Per iniziare a lavorare con il software Xampp è necessario scaricarlo ed installarlo nel proprio computer. Dopo averlo scaricato l’installer dalla pagina ufficiale. <br>
+        Una volta finito il Download , aprire il file scaricato, e trasciniamo xampp sulla cartella delle applicazione(una volta richiesto):</p>
+        <br>
+        <img src="IMG/xamp_inizio.png" alt="">
+        <br>
+        <p>Una volta copiato nella cartella delle applicazioni, lo lanciamo. Appena entrati su Xampp, prima di tutto dobbiamo entrare dentro la cartella di Xampp tramite il bottone "Open Application Folder", appena entrati entriamo su "etc" e subito dopo su "extra" e dobbiamo aprime il seguente file txt "httpd-xampp.conf":</p>
+        <img src="IMG/xamp_folder.png" alt="">
+        <br>
+        <img src="IMG/folder.png" alt="">
+        <br>
+        <p>Una volta aperto il file dobbiamo inserire, tra il tag "Directory" dopo l'ultima stringa (per sicurezza)la frase "Require all granted", una volta incollata, salviamo il file e chiudiamo il file:</p>
+        <br>
+        <img src="IMG/file.png" alt="">
+        <img src="" alt="">
+        <p>Finito ciò dobbiamo andare su "services" e cliccare su "Start All":</p>
+        <img src="IMG/xampp_2.png" alt="">
+        <br>
+        <div>
+            <h2>Creazione database con XAMPP</h2>
+            <p></p>
+
+        <br>
+        <p>Una volta che sono diventati tutti verdi, torniamo su "Welcome" e clicchiamo sulla scritta "Go to Application":</p>
+        <br>
+        <img src="IMG/xampp_3.png" alt="">
+        <br>
+        <img src="IMG/xamp_4.png" alt="">
+        <br>
+        <p>Dopo aver cliccato il precedente bottone menzionato, si dovrebbe aprire la schermata iniziale.<br>
+            Andiamo su phpMyAdmin:</p>
+        <br>
+        <img src="IMG/php_my_admin.png" alt="">
+        <br>
+        <img src="IMG/dentro_php.png" alt="" style="width: 110%;">
+        </div>
+
+        <p>Successivamente verrà aperta la pagina di “phpMyAdmin” nella quale sarà possibile creare e gestire database. Per crearne uno premiamo su “new” nel menù di sinistra:</p>
+        <br>
+        <img src="IMG/creazione_db.png"  style="width: 120%; ">
+        <br>
+        <p>Dop aver cliccato su "new", possiamo impostare il Nome del nuovo database che abbiamo creato e la rispettiva codifica dei caratteri, dove la lasicamo predefinita:</p>
+        <br>
+        <img src="IMG/creazioneTabella.png" alt=""  style="width: 120%;">
+        <br>
+        <p>Dopo aver creato un database, è possibile procedere alla creazione delle tabelle destinate all'inserimento dei dati. Per iniziare, seleziona il database appena creato dal menu di sinistra. Successivamente, imposta il nome e il numero dei campi desiderati per la tabella e infine premi il pulsante "Esegui" per confermare le modifiche:</p>
+        <br>
+        <img src="IMG/creazionetabella2.png" alt="" style="width: 120%;">
+        <br>
+        <h3>Definiamo gli attributi:</h3>
+        <ul>
+            <li>1.Per creare un nuovo attributo, fare clic sul pulsante "Aggiungi attributo" nella parte inferiore della pagina.</li>
+            <br>
+            <li>2.Nel campo "Nome attributo", inserire il nome dell'attributo che si desidera creare.</li>
+            <br>
+            <li>3.Nel campo "Tipo di dato", scegliere il tipo di dato appropriato per l'attributo, tra: testo, numero, data/ora, si/no oppure una numerazione automatica.            </li>
+            <br>
+            <li>4.Nel campo "Lunghezza del valore", inserire la lunghezza massima del valore dell'attributo, espressa in caratteri o cifre.            </li>
+            <br>
+            <li>5.Nel campo "Valore dell'attributo", scegliere tra 'binary', 'unsigned' o 'unsigned zerofill' a seconda delle specifiche esigenze.            </li>
+            <br>
+            <li>6.Se l'attributo può contenere valori nulli, spuntare la casella di controllo "Null".</li>
+            <br>
+            <li>7.Se l'attributo deve essere utilizzato come chiave primaria, spuntare la casella di controllo "Primary". Se invece deve essere utilizzato come chiave unica, spuntare la casella di controllo "Unique". Se infine l'attributo deve essere utilizzato come chiave esterna, spuntare la casella di controllo "Index".            </li>
+            <br>
+            <li>8.Se si desidera che il valore dell'attributo aumenti automaticamente, spuntare la casella di controllo "A_I" (auto increment).            </li>
+            <br>
+            <li>9.Se si desidera aggiungere un commento all'attributo, scrivere il commento nel campo "Commento".            </li>
+            <br>
+            <li>10.Una volta terminato di inserire gli attributi, scegliere 'InnoDB' come 'Storage engine' nella parte superiore della pagina.            </li>
+            <br>
+            <li>11.Fare clic sul pulsante "Salva" per creare la tabella.</li>
+        </ul>
+        <p>Per gestire le relazioni tra le tabelle, selezionare il database in questione e fare clic sulla voce "Designer" in alto a destra. Se la voce "Designer" non si vede, è necessario posizionare il mouse sopra la scritta "Più" in alto a destra e scegliere "Designer" dall'elenco a discesa.</p>
+        <br>
+        <p>Dopo aver selezionato "Designer", si potrà visualizzare una rappresentazione grafica delle tabelle presenti nel database, con le rispettive colonne. Utilizzando gli strumenti a disposizione (ad esempio, un connettore o una freccia), è possibile creare relazioni tra le tabelle e definire le condizioni di integrità referenziale.
+            <br>
+            <br>
+            Ad esempio, se si desidera creare una relazione tra due tabelle, si può fare clic sull'attributo chiave esterna della prima tabella e trascinarlo sull'attributo chiave primaria della seconda tabella. Una volta stabilita la relazione, è possibile utilizzare la freccia a destra del connettore per specificare ulteriori condizioni di integrità referenziale, come l'azione da intraprendere quando viene violata la relazione.
+            <br>
+            <br>
+            Infine, è possibile utilizzare la barra degli strumenti in alto a sinistra per eseguire diverse operazioni sulle tabelle, come ad esempio l'aggiunta o la modifica di attributi, l'aggiunta o la modifica di chiavi primarie, l'aggiunta o la modifica di chiavi esterne e così via.
+        </p>
+        <img src="IMG/design.png" alt="">
+        <br>
+        <p>Se la struttura del database è stata creata in modo giusto verrà rappresentata in modo grafico la relazione tra le tabelle:        </p>
+        <br>
+        <p>In seguito, si aprirà la pagina contenente la rappresentazione grafica delle tabelle create. Cliccando sull'icona del collegamento nella parte superiore, sarà possibile connettere la chiave primaria con la chiave esterna delle tabelle. Durante questo processo, ti verrà richiesto di specificare come il Database Management System (DBMS) dovrebbe gestire la cancellazione o la modifica dei record. Seleziona l'opzione "cascade" per indicare al DBMS che, in caso di cancellazione o modifica dei record precedentemente indicate, dovrà apportare automaticamente le modifiche corrispondenti nelle altre relazioni.        </p>
+        <br>
+        <img src="IMG/pre_relazione.png" alt="">
+        <br>
+        <img src="IMG/cascade.png" alt="">
+        <br>
+        <img src="IMG/associazione.png" alt="">
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+    <script src="js/index.js"></script>
+</body>
+</html>

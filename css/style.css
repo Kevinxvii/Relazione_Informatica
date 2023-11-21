@@ -1,0 +1,227 @@
+:root {
+    --background-color: #24252a;
+    --cta-color: rgba(0, 136, 169, 1);
+    --cta-hover-color: rgba(0, 136, 169, 0.8);
+    --link-color: #edf0f1;
+    --link-hover-color: #0088a9;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    background-color: var(--background-color);
+}
+
+header {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 30px 10%;
+    border-bottom: 1px solid #394049;
+}
+
+.logo {
+    margin-right: auto;
+}
+
+.nav__links {
+    list-style: none;
+    display: flex;
+}
+
+.testo {
+    text-align: justify;
+    color: var(--link-color);
+    line-height: 1.6;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.testo h1,
+.testo h2,
+.testo h3 {
+    text-align: center;
+}
+
+.testo p {
+    font-size: 18px;
+    margin-bottom: 15px;
+}
+
+.testo img {
+    display: block;
+    width: 90%;
+    margin: 0 auto;
+}
+
+a,
+.nav__links a,
+.cta,
+.overlay__content a,
+.overlay a {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    color: var(--link-color);
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.nav__links li {
+    padding: 0px 20px;
+}
+
+.nav__links li a {
+    transition: all 0.3s ease 0s;
+}
+
+.nav__links li a:hover {
+    color: var(--link-hover-color);
+}
+
+/* Add these styles for the dropdown button */
+.nav__links .dropdown {
+    position: relative;
+}
+
+.nav__links .dropdown button {
+    background: none;
+    border: none;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    color: var(--link-color);
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+.nav__links .dropdown button:hover {
+    color: var(--link-hover-color);
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: var(--background-color);
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    z-index: 1;
+    top: 100%;
+    left: 0;
+    min-width: 160px;
+}
+
+.dropdown-content a {
+    color: var(--link-color);
+    padding: 10px;
+    text-decoration: none;
+    display: block;
+    transition: color 0.3s ease;
+}
+
+.dropdown-content a:hover {
+    color: var(--link-hover-color);
+}
+
+.nav__links .dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.cta {
+    margin-left: 20px;
+    padding: 9px 25px;
+    background-color: var(--cta-color);
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.cta:hover {
+    background-color: var(--cta-hover-color);
+    color: var(--link-color);
+}
+
+/* Mobile Nav */
+.menu {
+    display: none;
+}
+
+.overlay {
+    color: white;
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    background-color: var(--background-color);
+    overflow-x: hidden;
+    transition: all 0.5s ease 0s;
+}
+
+.overlay--active {
+    color: white;
+    width: 100%;
+}
+
+.overlay__content {
+    color: white;
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.overlay a {
+    color: white;
+    padding: 15px;
+    font-size: 36px;
+    display: block;
+    transition: all 0.3s ease 0s;
+}
+
+.overlay a:hover,
+.overlay a:focus {
+    color: var(--link-hover-color);
+}
+
+.overlay .close {
+    position: absolute;
+    top: 20px;
+    right: 45px;
+    font-size: 60px;
+    color: var(--link-color);
+    cursor: pointer;
+}
+
+@media screen and (max-height: 450px) {
+    .overlay a {
+        font-size: 20px;
+    }
+    .overlay .close {
+        font-size: 40px;
+        top: 15px;
+        right: 35px;
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    .nav__links li {
+        padding: 10px;
+    }
+    .nav__links,
+    .cta {
+        display: none;
+    }
+    .menu {
+        display: initial;
+    }
+}
